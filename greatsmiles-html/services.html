@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Dental Services - Great Smiles Dentistry</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="index.html">
+          <i class="fas fa-tooth me-2"></i>
+          Great <span>Smiles</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary btn-sm ms-2"
+                href="contact.html"
+                >Book Appointment</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+      class="hero-section"
+      style="padding: 120px 0 60px">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="hero-title fade-in">Our Dental Services</h1>
+            <p class="hero-subtitle fade-in"
+              >Comprehensive dental care for the whole family</p
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <section
+      class="section"
+      style="background: var(--secondary-color)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul
+              class="nav nav-pills justify-content-center"
+              id="servicesTabs"
+              role="tablist">
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link active"
+                  id="general-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#general"
+                  type="button"
+                  role="tab"
+                  >General Dentistry</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="cosmetic-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#cosmetic"
+                  type="button"
+                  role="tab"
+                  >Cosmetic Dentistry</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="implants-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#implants"
+                  type="button"
+                  role="tab"
+                  >Dental Implants</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="orthodontics-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#orthodontics"
+                  type="button"
+                  role="tab"
+                  >Orthodontics</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="pediatric-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pediatric"
+                  type="button"
+                  role="tab"
+                  >Pediatric Dentistry</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="emergency-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#emergency"
+                  type="button"
+                  role="tab"
+                  >Emergency Care</button
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="section">
+      <div class="container">
+        <div
+          class="tab-content"
+          id="servicesTabContent">
+          <!-- General Dentistry -->
+          <div
+            class="tab-pane fade show active"
+            id="general"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="images/services/general.png"
+                  alt="General Dentistry"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>General Dentistry</h2>
+                  <p
+                    >Our comprehensive general dentistry services focus on
+                    maintaining your oral health and preventing dental problems
+                    before they start.</p
+                  >
+
+                  <h5 class="mt-4">Our General Dentistry Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Dental
+                      Cleanings & Exams</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Fillings &
+                      Restorations</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Root Canal
+                      Therapy</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Tooth
+                      Extractions</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Gum Disease
+                      Treatment</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Oral Cancer
+                      Screenings</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Preventive
+                      Care</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Book Appointment</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cosmetic Dentistry -->
+          <div
+            class="tab-pane fade"
+            id="cosmetic"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="images/services/cosmetics.png"
+                  alt="Cosmetic Dentistry"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Cosmetic Dentistry</h2>
+                  <p
+                    >Transform your smile with our advanced cosmetic dental
+                    procedures designed to enhance your appearance and boost
+                    your confidence.</p
+                  >
+
+                  <h5 class="mt-4">Our Cosmetic Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Teeth
+                      Whitening</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Porcelain
+                      Veneers</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Dental
+                      Bonding</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Smile
+                      Makeovers</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Cosmetic
+                      Contouring</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Gum
+                      Reshaping</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Invisible
+                      Fillings</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Book Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dental Implants -->
+          <div
+            class="tab-pane fade"
+            id="implants"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="images/services/implants.png"
+                  alt="Dental Implants"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Dental Implants</h2>
+                  <p
+                    >Replace missing teeth with permanent, natural-looking
+                    dental implants that function and feel like your own
+                    teeth.</p
+                  >
+
+                  <h5 class="mt-4">Our Implant Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Single
+                      Tooth Implants</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Multiple
+                      Tooth Implants</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Full Arch
+                      Implants</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i
+                      >Implant-Supported Dentures</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>All-on-4
+                      Implants</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Implant
+                      Maintenance</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Bone
+                      Grafting</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Implant Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Orthodontics -->
+          <div
+            class="tab-pane fade"
+            id="orthodontics"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="images/services/orthodontics.png"
+                  alt="Orthodontics"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Orthodontics</h2>
+                  <p
+                    >Straighten your teeth and achieve a perfectly aligned smile
+                    with our modern orthodontic solutions for all ages.</p
+                  >
+
+                  <h5 class="mt-4">Our Orthodontic Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Traditional
+                      Metal Braces</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Ceramic
+                      Braces</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Clear
+                      Aligners (Invisalign)</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Lingual
+                      Braces</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i
+                      >Retainers</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Early
+                      Orthodontic Treatment</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Adult
+                      Orthodontics</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Orthodontic Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pediatric Dentistry -->
+          <div
+            class="tab-pane fade"
+            id="pediatric"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="images/services/Pediatric.png"
+                  alt="Pediatric Dentistry"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Pediatric Dentistry</h2>
+                  <p
+                    >Specialized dental care for children in a fun, comfortable
+                    environment that makes dental visits enjoyable for kids.</p
+                  >
+
+                  <h5 class="mt-4">Our Pediatric Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i
+                      >Child-Friendly Cleanings</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Dental
+                      Sealants</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Fluoride
+                      Treatments</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Early
+                      Orthodontic Screening</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Cavity
+                      Prevention</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Emergency
+                      Pediatric Care</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Dental
+                      Education</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Schedule Child's Visit</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Care -->
+          <div
+            class="tab-pane fade"
+            id="emergency"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="images/services/emergency.png"
+                  alt="Emergency Care"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Emergency Dental Care</h2>
+                  <p
+                    >24/7 emergency dental services for urgent dental problems,
+                    severe pain, and dental trauma when you need immediate
+                    care.</p
+                  >
+
+                  <h5 class="mt-4">Emergency Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Severe
+                      Tooth Pain</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Broken or
+                      Chipped Teeth</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Knocked-Out
+                      Teeth</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Lost
+                      Fillings or Crowns</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Dental
+                      Abscess</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Bleeding
+                      Gums</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Jaw Pain or
+                      Swelling</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="tel:+15559998888"
+                      class="btn btn-primary"
+                      >Emergency: (555) 999-8888</a
+                    >
+                    <a
+                      href="contact.html"
+                      class="btn btn-outline-primary ms-2"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section
+      class="section"
+      style="background: var(--secondary-color)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in"
+              >Why Choose Great Smiles Dentistry?</h2
+            >
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h4>Proven Results</h4>
+              <p
+                >Thousands of satisfied patients with beautiful, healthy
+                smiles.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Experienced Team</h4>
+              <p
+                >Our dentists bring decades of combined experience across all
+                specialties.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4>Compassionate Care</h4>
+              <p
+                >We treat every patient like family with gentle, personalized
+                care.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4>Flexible Hours</h4>
+              <p>Early morning, evening, and weekend appointments available.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h4>Affordable Care</h4>
+              <p>Flexible payment plans and financing options available.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>Advanced Technology</h4>
+              <p
+                >State-of-the-art equipment for precise, comfortable
+                treatment.</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Banner -->
+    <section class="appointment-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Ready to Transform Your Smile?</h3>
+            <p class="mb-3"
+              >Schedule your consultation today and discover how we can help you
+              achieve the smile you've always wanted.</p
+            >
+            <a
+              href="contact.html"
+              class="btn"
+              >Schedule Your Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5>Great Smiles Dentistry</h5>
+            <p
+              >Providing exceptional dental care with compassion, technology,
+              and expertise to create beautiful, healthy smiles for our
+              community.</p
+            >
+            <div class="social-links">
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#general">General Dentistry</a></li>
+              <li><a href="#cosmetic">Cosmetic Dentistry</a></li>
+              <li><a href="#implants">Dental Implants</a></li>
+              <li><a href="#orthodontics">Orthodontics</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="index.html#team">Our Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5>Newsletter</h5>
+            <p>Stay updated with dental health tips and office news.</p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Your email" />
+              <button
+                type="submit"
+                class="btn btn-outline-light"
+                >Subscribe</button
+              >
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>&copy; 2024 Great Smiles Dentistry. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Call Us Button -->
+    <button class="call-us-btn">
+      <i class="fas fa-phone me-2"></i>Call Us Now
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

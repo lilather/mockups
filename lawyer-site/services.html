@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Legal Services - Justice Law Firm</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="index.html">
+          <i class="fas fa-balance-scale me-2"></i>
+          Justice <span>Law Firm</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-light btn-sm ms-2"
+                href="contact.html"
+                >Free Consultation</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section
+      class="hero-section"
+      style="padding: 120px 0 60px">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="hero-title fade-in">Our Legal Services</h1>
+            <p class="hero-subtitle fade-in"
+              >Comprehensive legal solutions tailored to your specific needs</p
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <section
+      class="section"
+      style="background: var(--accent-color)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul
+              class="nav nav-pills justify-content-center"
+              id="servicesTabs"
+              role="tablist">
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link active"
+                  id="criminal-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#criminal"
+                  type="button"
+                  role="tab"
+                  >Criminal Defense</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="real-estate-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#real-estate"
+                  type="button"
+                  role="tab"
+                  >Real Estate</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="business-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#business"
+                  type="button"
+                  role="tab"
+                  >Business Law</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="family-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#family"
+                  type="button"
+                  role="tab"
+                  >Family Law</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="personal-injury-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#personal-injury"
+                  type="button"
+                  role="tab"
+                  >Personal Injury</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="estate-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#estate"
+                  type="button"
+                  role="tab"
+                  >Estate Planning</button
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="section">
+      <div class="container">
+        <div
+          class="tab-content"
+          id="servicesTabContent">
+          <!-- Criminal Defense -->
+          <div
+            class="tab-pane fade show active"
+            id="criminal"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="https://placehold.co/600x400/1a365d/ffffff?text=Criminal+Defense"
+                  alt="Criminal Defense"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Criminal Defense</h2>
+                  <p
+                    >Our criminal defense attorneys are dedicated to protecting
+                    your rights and ensuring you receive a fair trial. We handle
+                    all types of criminal cases with aggressive representation
+                    and strategic defense strategies.</p
+                  >
+
+                  <h5 class="mt-4">Our Criminal Defense Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>DUI and
+                      Traffic Violations</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Drug Crimes
+                      and Possession</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Assault and
+                      Battery</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Theft and
+                      Property Crimes</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>White
+                      Collar Crimes</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Sexual
+                      Assault Cases</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Homicide
+                      and Manslaughter</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Estate Law -->
+          <div
+            class="tab-pane fade"
+            id="real-estate"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="https://placehold.co/600x400/1a365d/ffffff?text=Real+Estate+Law"
+                  alt="Real Estate Law"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Real Estate Law</h2>
+                  <p
+                    >Our real estate attorneys provide comprehensive legal
+                    services for all aspects of property law, from residential
+                    transactions to complex commercial developments.</p
+                  >
+
+                  <h5 class="mt-4">Our Real Estate Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Residential
+                      Property Transactions</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Commercial
+                      Real Estate</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Property
+                      Disputes and Litigation</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i
+                      >Landlord-Tenant Law</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Zoning and
+                      Land Use</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Real Estate
+                      Development</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Title
+                      Insurance and Escrow</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Law -->
+          <div
+            class="tab-pane fade"
+            id="business"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="https://placehold.co/600x400/1a365d/ffffff?text=Business+Law"
+                  alt="Business Law"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Business Law</h2>
+                  <p
+                    >Our business law team provides strategic legal counsel to
+                    help your business grow, comply with regulations, and
+                    navigate complex legal challenges.</p
+                  >
+
+                  <h5 class="mt-4">Our Business Law Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Business
+                      Formation and Structure</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Contract
+                      Drafting and Negotiation</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Employment
+                      Law and HR Compliance</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i
+                      >Intellectual Property Protection</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Mergers and
+                      Acquisitions</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Corporate
+                      Governance</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Business
+                      Litigation</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Family Law -->
+          <div
+            class="tab-pane fade"
+            id="family"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="https://placehold.co/600x400/1a365d/ffffff?text=Family+Law"
+                  alt="Family Law"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Family Law</h2>
+                  <p
+                    >Our family law attorneys provide compassionate and
+                    effective representation for all family legal matters,
+                    helping you navigate difficult times with care and
+                    expertise.</p
+                  >
+
+                  <h5 class="mt-4">Our Family Law Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Divorce and
+                      Legal Separation</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Child
+                      Custody and Visitation</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Child
+                      Support and Alimony</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Adoption
+                      and Surrogacy</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Prenuptial
+                      and Postnuptial Agreements</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Domestic
+                      Violence Protection</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Paternity
+                      and Parentage</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Injury -->
+          <div
+            class="tab-pane fade"
+            id="personal-injury"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="https://placehold.co/600x400/1a365d/ffffff?text=Personal+Injury"
+                  alt="Personal Injury"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Personal Injury</h2>
+                  <p
+                    >Our personal injury attorneys fight aggressively to ensure
+                    accident victims receive the compensation they deserve for
+                    their injuries, medical expenses, and lost wages.</p
+                  >
+
+                  <h5 class="mt-4">Our Personal Injury Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Car and
+                      Truck Accidents</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Motorcycle
+                      and Bicycle Accidents</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Slip and
+                      Fall Accidents</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Medical
+                      Malpractice</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Product
+                      Liability</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Workplace
+                      Accidents</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Wrongful
+                      Death</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estate Planning -->
+          <div
+            class="tab-pane fade"
+            id="estate"
+            role="tabpanel">
+            <div class="row align-items-center">
+              <div class="col-lg-6 slide-in-left">
+                <img
+                  src="https://placehold.co/600x400/1a365d/ffffff?text=Estate+Planning"
+                  alt="Estate Planning"
+                  class="img-fluid rounded-3" />
+              </div>
+              <div class="col-lg-6">
+                <div class="fade-in">
+                  <h2>Estate Planning</h2>
+                  <p
+                    >Our estate planning attorneys help you protect your legacy
+                    and ensure your loved ones are provided for through
+                    comprehensive estate planning strategies.</p
+                  >
+
+                  <h5 class="mt-4">Our Estate Planning Services Include:</h5>
+                  <ul class="list-unstyled">
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Wills and
+                      Trusts</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Living
+                      Wills and Healthcare Directives</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Power of
+                      Attorney</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Probate and
+                      Estate Administration</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Asset
+                      Protection</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Charitable
+                      Giving</li
+                    >
+                    <li
+                      ><i class="fas fa-check text-success me-2"></i>Business
+                      Succession Planning</li
+                    >
+                  </ul>
+
+                  <div class="mt-4">
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary"
+                      >Free Consultation</a
+                    >
+                    <a
+                      href="tel:+15551234567"
+                      class="btn btn-outline-primary ms-2"
+                      >Call Now</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section
+      class="section"
+      style="background: var(--accent-color)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in">Why Choose Justice Law Firm?</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <h4>Proven Results</h4>
+              <p
+                >Our track record speaks for itself with thousands of successful
+                cases and satisfied clients.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Experienced Team</h4>
+              <p
+                >Our attorneys bring decades of combined experience across all
+                practice areas.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4>Personal Attention</h4>
+              <p
+                >We treat every client like family, providing personalized
+                attention and care.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4>24/7 Availability</h4>
+              <p
+                >Legal emergencies don't wait, and neither do we. We're
+                available when you need us.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h4>Free Consultations</h4>
+              <p
+                >We offer free initial consultations to discuss your case and
+                legal options.</p
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>Client Protection</h4>
+              <p
+                >Your rights and interests are our top priority in every case we
+                handle.</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Consultation Banner -->
+    <section class="consultation-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3
+              >Ready to Get Started? Schedule Your Free Consultation Today!</h3
+            >
+            <p class="mb-3"
+              >Our experienced attorneys are ready to help you understand your
+              legal options and fight for your rights.</p
+            >
+            <a
+              href="contact.html"
+              class="btn"
+              >Schedule Free Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5>Justice Law Firm</h5>
+            <p
+              >Providing expert legal services with integrity, professionalism,
+              and dedication to client success for over 25 years.</p
+            >
+            <div class="social-links">
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#criminal">Criminal Defense</a></li>
+              <li><a href="#real-estate">Real Estate</a></li>
+              <li><a href="#business">Business Law</a></li>
+              <li><a href="#family">Family Law</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5>Newsletter</h5>
+            <p>Stay updated with legal insights and firm news.</p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Your email" />
+              <button
+                type="submit"
+                class="btn btn-outline-light"
+                >Subscribe</button
+              >
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>&copy; 2024 Justice Law Firm. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Call Us Button -->
+    <button class="call-us-btn">
+      <i class="fas fa-phone me-2"></i>Call Us Now
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

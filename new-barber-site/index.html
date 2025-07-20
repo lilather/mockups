@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber Shop</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Bootstrap Icons (optional, for service icons) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+  />
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<script src="./js/app.js" defer></script>
+  <script src="https://app.unpkg.com/fslightbox@3.5.1"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    .hr-thin {
+      border: 0;
+      height: 1px;
+      background: #000;
+      margin: 0.5rem auto 0;
+    }
+    .hr-thick {
+      border: 0;
+      height: 4px;
+      background: #000;
+      margin: 0.25rem auto 1rem;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Barber Shop</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hours">Hours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#alcohol">Alcohol</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <!-- This overlay text will slide in from the left on load -->
+    <div class="hero-overlay">
+      <div class="barber-pole d-flex align-items-center">
+        <img class=" animate__animated animate__slideInLeft" src="img/barber-pole.png"></img>
+    <div class="hero-sub-text animate__animated animate__slideInLeft">
+      The Famous    </div></div>
+    <div class="hero-med-text   animate__animated animate__slideInLeft">Cut & Brew</div>
+    <div class="  hero-big-text animate__animated animate__slideInLeft">Barbershop</div>
+
+    <div class="hero-p-text  animate__animated animate__slideInLeft">
+      <p>The Cut & Brew Barbershop: Where Style Meets Spirits. Get a precision cut while enjoying a craft beer or cocktail in a relaxing, social atmosphere. </p>   </div>
+    <!-- You may keep any additional hero elements here,
+         for example if you want to show smaller centered text for mobile -->
+  </div></div>
+</section>
+
+<!-- About Section -->
+<section>
+  <div class="container">
+    <div class="row justify-content-between">
+      <!-- Popular Hair Styles -->
+      <div class="col-12 col-md-4">
+        <div class="container">
+          <div class="row">
+            <h2 class="mb-4">Popular Hair Styles</h2>
+
+            <div class="col-4 mb-3">
+              <a href="./img/1.png" data-fslightbox>
+                <img class="gallery-img" src="./img/1.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="./img/2.png" data-fslightbox>
+                <img class="gallery-img" src="./img/2.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="./img/3.png" data-fslightbox>
+                <img class="gallery-img" src="./img/3.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="./img/4.png" data-fslightbox>
+                <img class="gallery-img" src="./img/4.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="./img/5.png" data-fslightbox>
+                <img class="gallery-img" src="./img/5.png" alt="Image 1">
+              </a>
+            </div>
+            <div class="col-4 mb-3">
+              <a href="./img/6.png" data-fslightbox>
+                <img class="gallery-img" src="./img/6.png" alt="Image 1">
+              </a>
+            </div>
+            <!-- Gallery Link -->
+            <div class="galleryLink col-12">
+              <a href="#">
+                Follow us on Instagram <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Our Prices -->
+      <div class="col-12 col-md-7">
+        <div class="headerSection" id="services">
+          <h2 class="mb-4">Our Prices</h2>
+          <table class="services-table">
+            <tbody>
+            <tr>
+              <td>Haircut</td>
+              <td class="price">from $25</td>
+            </tr>
+            <tr>
+              <td>Beard Trim</td>
+              <td class="price">from $15</td>
+            </tr>
+            <tr>
+              <td>Shave</td>
+              <td class="price">from $20</td>
+            </tr>
+            <tr>
+              <td>Facial</td>
+              <td class="price">from $40</td>
+            </tr>
+            <tr>
+              <td>Hair Styling</td>
+              <td class="price">from $30</td>
+            </tr>
+            <tr>
+              <td>Hot Towel Treatment</td>
+              <td class="price">from $10</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section -->
+
+
+<!-- Hours Section -->
+<section id="hours" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="wow animate__animated animate__fadeInUp">Operating Hours</h2>
+      <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+        Visit us during our working hours.
+      </p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+            <strong>Monday - Friday:</strong> 9:00 AM - 7:00 PM
+          </li>
+          <li class="list-group-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.2s">
+            <strong>Saturday:</strong> 10:00 AM - 5:00 PM
+          </li>
+          <li class="list-group-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+            <strong>Sunday:</strong> Closed
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alcohol Section -->
+
+<!-- Add this to your CSS -->
+
+
+<!-- Add this to your CSS -->
+
+
+<section id="alcohol" class="bg-light">
+  <div class="container py-5">
+    <!-- Section Title + Subheader -->
+    <h2 class="text-center fw-bold mb-2">Our Bar Selections</h2>
+
+    <p class="text-center text-muted mb-5">
+      Curated whiskeys, bourbons, and signature cocktails for true connoisseurs.
+    </p>
+
+    <div class="row align-items-center">
+      <!-- Large Bar Image -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <img
+          src='./img/bar.png'
+          alt="Bar Interior"
+          class="img-fluid rounded"
+          style="object-fit:cover; width:100%; height:auto;"
+        >
+      </div>
+
+      <!-- Menu Column -->
+      <div class="col-12 col-md-6">
+        <h4 class="decor-h4">Whiskeys & Bourbons</h4>
+        <hr class="hr-thin">
+        <hr class="hr-thick">
+        <ul class="list-unstyled text-start">
+          <li class="mb-3">
+            <strong>Bulleit Bourbon</strong><br>
+            A high‑rye bourbon with bold spice, smooth vanilla, and toasted oak notes.
+          </li>
+          <li class="mb-3">
+            <strong>Maker’s Mark</strong><br>
+            Soft, wheated bourbon offering caramel, toffee, and gentle spice on the finish.
+          </li>
+          <li class="mb-3">
+            <strong>Woodford Reserve</strong><br>
+            Rich and complex—dried fruit, cinnamon, dark chocolate, and toasted oak blend.
+          </li>
+          <li class="mb-3">
+            <strong>Jack Daniel’s</strong><br>
+            Tennessee whiskey charcoal‑filtered for banana, toasted oak, and warm spice flavors.
+          </li>
+          <li>
+            <strong>Jameson Irish Whiskey</strong><br>
+            Triple‑distilled, light and floral with honeyed sweetness and soft vanilla undertones.
+          </li>
+        </ul>
+
+        <h4 class="decor-h4 mt-4">Signature Cocktails</h4>
+        <hr class="hr-thin">
+        <hr class="hr-thick">
+        <ul class="list-unstyled text-start">
+          <li class="mb-3">
+            <strong>Old Fashioned</strong><br>
+            Bourbon stirred with bitters and sugar, garnished with a fresh orange twist.
+          </li>
+          <li class="mb-3">
+            <strong>Manhattan</strong><br>
+            Rye whiskey blended with sweet vermouth and bitters, served up with a cherry.
+          </li>
+          <li class="mb-3">
+            <strong>Whiskey Sour</strong><br>
+            Bourbon shaken with lemon juice and syrup for a bright, balanced sip.
+          </li>
+          <li class="mb-3">
+            <strong>Mint Julep</strong><br>
+            Bourbon over crushed ice with mint leaves and simple syrup—refreshingly cool.
+          </li>
+          <li>
+            <strong>Barbershop Boulevardier</strong><br>
+            Bourbon, Campari, and sweet vermouth unite in a bold, bittersweet classic.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="team">
+  <div class="container">
+    <!-- Header & Subheader -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Meet Our Expert Barbers</h2>
+      <p class="text-muted mb-3">Our skilled team is here to craft your perfect look.</p>
+    </div>
+
+    <div class="row gy-4">
+      <!-- Barber 1 -->
+      <div class="col-12 col-md-4 text-center">
+        <img
+          src="img/barber-1-1-480x480.png"
+          alt="John Cooper"
+          class="mb-3"
+        >
+        <h3 class="h6 mb-1"><strong>JOHN COOPER</strong></h3>
+        <p class="text-muted mb-2">The Master Barber</p>
+        <p class="mb-1">Phone: 555‑123‑4567</p>
+        <p class="mb-2">Email: john.doe@example.com</p>
+        <p>
+          <a href="#" class="text-dark me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-dark">
+            <i class="bi bi-calendar-check"></i> Booksy
+          </a>
+        </p>
+      </div>
+
+      <!-- Barber 2 -->
+      <div class="col-12 col-md-4 text-center">
+        <img
+          src="img/barber-2-1-480x480.png"
+          alt="Jane Smith"
+          class="mb-3"
+        >
+        <h3 class="h6 mb-1"><strong>JANE SMITH</strong></h3>
+        <p class="text-muted mb-2">Senior Stylist</p>
+        <p class="mb-1">Phone: 555‑987‑6543</p>
+        <p class="mb-2">Email: jane.smith@example.com</p>
+        <p>
+          <a href="#" class="text-dark me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-dark">
+            <i class="bi bi-calendar-check"></i> Booksy
+          </a>
+        </p>
+      </div>
+
+      <!-- Barber 3 -->
+      <div class="col-12 col-md-4 text-center">
+        <img
+          src="img/barber-3-480x480.png"
+          alt="Mike Johnson"
+          class="mb-3"
+        >
+        <h3 class="h6 mb-1"><strong>MIKE JOHNSON</strong></h3>
+        <p class="text-muted mb-2">Fade Specialist</p>
+        <p class="mb-1">Phone: 555‑321‑7890</p>
+        <p class="mb-2">Email: mike.johnson@example.com</p>
+        <p>
+          <a href="#" class="text-dark me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-dark me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-dark">
+            <i class="bi bi-calendar-check"></i> Booksy
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" >
+  <div class="container">
+    <h2 class="text-center wow animate__animated animate__fadeInUp">
+      Get In Touch
+    </h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Map Section -->
+<!-- Map Section with Fixed Height -->
+<div id="map">
+  <div class="container-fluid px-0">
+    <iframe
+      src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      title="Mockup Map"
+      style="border:0; width:100%; height:600px;"
+      allowfullscreen
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+    <p>&copy; 2025 Barber Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  // Initialize WOW.js to enable scroll animations
+  new WOW().init();
+</script>
+</body>
+</html>

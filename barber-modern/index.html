@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Vintage Cuts - Classic Barber Shop</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#home">
+          <i class="fas fa-cut me-2"></i>
+          Vintage Cuts
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#team"
+                >Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary btn-sm ms-2"
+                href="#contact"
+                >Book Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section - Split Layout -->
+    <section
+      class="hero-section"
+      id="home">
+      <div class="row g-0">
+        <div class="col-lg-6 hero-left">
+          <div class="hero-content">
+            <h1 class="hero-title fade-in">
+              Classic Cuts<br />
+              <span style="color: var(--accent-color)">Timeless Style</span>
+            </h1>
+            <p class="hero-subtitle fade-in">
+              Step into a bygone era of craftsmanship and tradition. Our master
+              barbers bring the art of classic grooming to life in an authentic
+              vintage atmosphere.
+            </p>
+            <div class="hero-buttons fade-in">
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                >Book Appointment</a
+              >
+              <a
+                href="#services"
+                class="btn btn-outline-light"
+                >Our Services</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-right">
+          <!-- Background image set in CSS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      class="about-section section"
+      id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 slide-in-left">
+            <img
+              src="images/vintage chair.png"
+              alt="Vintage Barber Chair"
+              class="img-fluid about-image" />
+          </div>
+          <div class="col-lg-5">
+            <div class="about-content fade-in">
+              <h3>Our Heritage</h3>
+              <p
+                >Since 1925, Vintage Cuts has been the cornerstone of men's
+                grooming in our community. We preserve the timeless traditions
+                of barbering while embracing the craftsmanship that made this
+                profession an art form.</p
+              >
+              <p
+                >Our vintage-inspired shop features original fixtures, classic
+                styling chairs, and the authentic atmosphere that transports you
+                to a simpler time when a haircut was more than just a service—it
+                was an experience.</p
+              >
+              <ul class="list-unstyled">
+                <li
+                  ><i class="fas fa-check text-success me-2"></i>Traditional
+                  Barbering Techniques</li
+                >
+                <li
+                  ><i class="fas fa-check text-success me-2"></i>Vintage Shop
+                  Atmosphere</li
+                >
+                <li
+                  ><i class="fas fa-check text-success me-2"></i>Classic Styling
+                  Chairs</li
+                >
+                <li
+                  ><i class="fas fa-check text-success me-2"></i>Premium Shaving
+                  Products</li
+                >
+                <li
+                  ><i class="fas fa-check text-success me-2"></i>Walk-ins
+                  Welcome</li
+                >
+              </ul>
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                >Visit Our Shop</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section
+      class="services-section section"
+      id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in">Traditional Services</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <img
+                  src="images/icons/classic-cut-icon.png"
+                  alt="Classic Cut"
+                  style="width: 50px; height: 50px" />
+              </div>
+              <h4>Classic Haircut</h4>
+              <p
+                >Traditional barber cuts with hot towel treatment and classic
+                styling. Includes consultation and finish.</p
+              >
+              <div class="service-price">$30</div>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <img
+                  src="images/icons/strait-razer-icon.png"
+                  alt="Straight Razor"
+                  style="width: 50px; height: 50px" />
+              </div>
+              <h4>Straight Razor Shave</h4>
+              <p
+                >Traditional straight razor shave with hot towels, pre-shave
+                oil, and post-shave treatment.</p
+              >
+              <div class="service-price">$25</div>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <img
+                  src="images/icons/mens-facvial-icon.png"
+                  alt="Facial Treatment"
+                  style="width: 50px; height: 50px" />
+              </div>
+              <h4>Facial Treatments</h4>
+              <p
+                >Rejuvenating facial treatments with premium products, hot
+                towels, and professional skin care techniques.</p
+              >
+              <div class="service-price">$35</div>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <img
+                  src="images/icons/beard-icon.png"
+                  alt="Beard Trim"
+                  style="width: 50px; height: 50px" />
+              </div>
+              <h4>Beard Trim</h4>
+              <p
+                >Professional beard shaping and trimming with hot towel
+                treatment and beard oil application.</p
+              >
+              <div class="service-price">$20</div>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <img
+                  src="images/icons/hot-towel-icon.png"
+                  alt="Hot Towel"
+                  style="width: 50px; height: 50px" />
+              </div>
+              <h4>Hot Towel Treatment</h4>
+              <p
+                >Relaxing hot towel treatment with premium products. Perfect for
+                skin care and relaxation.</p
+              >
+              <div class="service-price">$15</div>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary"
+                >Book Now</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <img
+                  src="images/icons/vintage-icon.png"
+                  alt="Vintage Package"
+                  style="width: 50px; height: 50px" />
+              </div>
+              <h4>Vintage Package</h4>
+              <p
+                >Complete vintage experience: haircut, straight razor shave, hot
+                towel, and classic styling.</p
+              >
+              <div class="service-price">$60</div>
+              <a
+                href="#contact"
+                class="btn btn-outline-primary"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section
+      class="gallery-section section"
+      id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in">Our Work</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <img
+              src="images/styles/style1.jpeg"
+              alt="Classic Style 1" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="images/styles/style2.jpeg"
+              alt="Classic Style 2" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="images/styles/style3.jpeg"
+              alt="Classic Style 3" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="images/styles/style4.jpeg"
+              alt="Classic Style 4" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="images/styles/style5.jpeg"
+              alt="Classic Style 5" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="gallery-item fade-in">
+            <img
+              src="images/styles/style6.jpeg"
+              alt="Classic Style 6" />
+            <div class="gallery-overlay">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section
+      class="team-section section"
+      id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in">Our Master Barbers</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="team-card fade-in">
+              <img
+                src="images/barber 1.png"
+                alt="Master Barber"
+                class="team-image" />
+              <div class="team-info">
+                <h4 class="team-name">William "Bill" Thompson</h4>
+                <p class="team-position">Master Barber & Shop Owner</p>
+                <p
+                  >With over 25 years of experience, Bill learned the craft from
+                  his grandfather who opened this shop in 1925. He specializes
+                  in traditional cuts and straight razor shaves, keeping the
+                  vintage techniques alive for a new generation.</p
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="team-card fade-in">
+              <img
+                src="images/barber 2.png"
+                alt="Senior Barber"
+                class="team-image" />
+              <div class="team-info">
+                <h4 class="team-name">Frank Rodriguez</h4>
+                <p class="team-position">Senior Barber</p>
+                <p
+                  >Frank brings 15 years of experience and a passion for classic
+                  styling. He's known for his attention to detail and ability to
+                  create the perfect vintage look for any gentleman.</p
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="team-card fade-in">
+              <img
+                src="images/barber 3.png"
+                alt="Style Specialist"
+                class="team-image" />
+              <div class="team-info">
+                <h4 class="team-name">James "Jimmy" Wilson</h4>
+                <p class="team-position">Classic Style Specialist</p>
+                <p
+                  >Jimmy specializes in vintage and retro styles, bringing back
+                  the classic looks from the 1920s through the 1960s. His
+                  expertise in period-accurate cuts makes him a favorite among
+                  vintage enthusiasts.</p
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="testimonials-section section"
+      id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in">Client Testimonials</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card fade-in">
+              <p class="testimonial-text"
+                >"Walking into Vintage Cuts is like stepping back in time. Bill
+                gave me the perfect classic cut, and the atmosphere is
+                absolutely authentic. This is how barbering should be done."</p
+              >
+              <h6 class="testimonial-author">- Robert Anderson</h6>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card fade-in">
+              <p class="testimonial-text"
+                >"Frank's straight razor shave is the best I've ever had. The
+                hot towel treatment and attention to detail make every visit
+                feel like a luxury experience from a bygone era."</p
+              >
+              <h6 class="testimonial-author">- Michael Chen</h6>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card fade-in">
+              <p class="testimonial-text"
+                >"Jimmy created the perfect 1950s style for my wedding. The
+                vintage package was worth every penny. This shop preserves the
+                true art of barbering."</p
+              >
+              <h6 class="testimonial-author">- David Martinez</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Banner -->
+    <section class="appointment-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Experience Classic Barbering</h3>
+            <p class="mb-3"
+              >Book your appointment today and step into a world of timeless
+              tradition and craftsmanship.</p
+            >
+            <a
+              href="#contact"
+              class="btn"
+              >Book Your Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      class="contact-section section"
+      id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title fade-in">Visit Our Shop</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="contact-info fade-in">
+              <h4>Shop Information</h4>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h6>Address</h6>
+                  <p>456 Main Street<br />Downtown, CA 90210</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h6>Phone</h6>
+                  <p>(555) 123-4567</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h6>Email</h6>
+                  <p>info@vintagecuts.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h6>Hours</h6>
+                  <p
+                    >Tuesday - Saturday: 9:00 AM - 7:00 PM<br />Sunday: 10:00 AM
+                    - 5:00 PM<br />Monday: Closed</p
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-form fade-in">
+              <h4>Book Your Appointment</h4>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name"
+                      required />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name"
+                      required />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Phone Number" />
+                  </div>
+                  <div class="col-12">
+                    <select class="form-control">
+                      <option value="">Select Service</option>
+                      <option value="classic">Classic Haircut</option>
+                      <option value="razor">Straight Razor Shave</option>
+                      <option value="gentleman">Gentleman's Cut</option>
+                      <option value="beard">Beard Trim</option>
+                      <option value="towel">Hot Towel Treatment</option>
+                      <option value="vintage">Vintage Package</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Tell us about your style preferences..."></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100"
+                      >Schedule Appointment</button
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5>Vintage Cuts</h5>
+            <p
+              >Preserving the timeless art of barbering since 1925. Classic
+              cuts, traditional techniques, and authentic vintage atmosphere.</p
+            >
+            <div class="social-links">
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#services">Classic Haircuts</a></li>
+              <li><a href="#services">Straight Razor Shaves</a></li>
+              <li><a href="#services">Beard Trims</a></li>
+              <li><a href="#services">Hot Towel Treatments</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 mb-4">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about">Our Heritage</a></li>
+              <li><a href="#team">Our Barbers</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5>Newsletter</h5>
+            <p>Stay updated with classic styling tips and shop news.</p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Your email" />
+              <button
+                type="submit"
+                class="btn btn-outline-light"
+                >Subscribe</button
+              >
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p>&copy; 2024 Vintage Cuts. Preserving tradition since 1925.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Call Us Button -->
+    <button class="call-us-btn">
+      <i class="fas fa-phone me-2"></i>Call Now
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

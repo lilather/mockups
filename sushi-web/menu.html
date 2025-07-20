@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Sakura Sushi</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <!-- AOS Animation Library -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="index.html">
+          <span class="brand-text">Sakura</span>
+          <span class="brand-subtitle">Sushi</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-light btn-sm ms-2"
+                href="menu.html"
+                >Order Now</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1
+              class="page-title"
+              data-aos="fade-up"
+              >Our Menu</h1
+            >
+            <p
+              class="page-subtitle"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              >Discover our authentic Japanese cuisine</p
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section py-5">
+      <div class="container">
+        <!-- Menu Navigation -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <ul
+              class="nav nav-pills justify-content-center"
+              id="menuTabs"
+              role="tablist">
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link active"
+                  id="appetizers-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#appetizers"
+                  type="button"
+                  role="tab"
+                  >Appetizers</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="sushi-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#sushi"
+                  type="button"
+                  role="tab"
+                  >Sushi & Sashimi</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="rolls-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#rolls"
+                  type="button"
+                  role="tab"
+                  >Specialty Rolls</button
+                >
+              </li>
+              <li
+                class="nav-item"
+                role="presentation">
+                <button
+                  class="nav-link"
+                  id="drinks-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#drinks"
+                  type="button"
+                  role="tab"
+                  >Drinks</button
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menu Content -->
+        <div
+          class="tab-content"
+          id="menuTabContent">
+          <!-- Appetizers -->
+          <div
+            class="tab-pane fade show active"
+            id="appetizers"
+            role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-lg-6"
+                data-aos="fade-up">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/miso soup.png"
+                      alt="Miso Soup"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Miso Soup <span class="price">$4</span></h4>
+                    <p>Traditional Japanese soup with tofu and seaweed</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/Gyoza.png"
+                      alt="Gyoza"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Gyoza <span class="price">$8</span></h4>
+                    <p>Pan-fried dumplings with pork and vegetables</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/Tempura.png"
+                      alt="Tempura"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Tempura <span class="price">$12</span></h4>
+                    <p>Lightly battered and fried vegetables and shrimp</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="300">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/Gyoza 2.png"
+                      alt="Gyoza"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Gyoza <span class="price">$8</span></h4>
+                    <p>Pan-fried dumplings with pork and vegetables</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sushi & Sashimi -->
+          <div
+            class="tab-pane fade"
+            id="sushi"
+            role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-lg-6"
+                data-aos="fade-up">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/Salmon Nigiri.png"
+                      alt="Salmon Nigiri"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Salmon Nigiri <span class="price">$6</span></h4>
+                    <p>Fresh Atlantic salmon over seasoned rice</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/Tuna Sashimi.png"
+                      alt="Tuna Sashimi"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Tuna Sashimi <span class="price">$12</span></h4>
+                    <p>Premium bluefin tuna served fresh</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/yellowtail nigiri.png"
+                      alt="Yellowtail Nigiri"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Yellowtail Nigiri <span class="price">$7</span></h4>
+                    <p>Fresh yellowtail over seasoned rice</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="300">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/eel nigiri.png"
+                      alt="Eel Nigiri"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Eel Nigiri <span class="price">$8</span></h4>
+                    <p>Grilled eel with sweet sauce over rice</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specialty Rolls -->
+          <div
+            class="tab-pane fade"
+            id="rolls"
+            role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-lg-6"
+                data-aos="fade-up">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/rainbow roll.png"
+                      alt="Rainbow Roll"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Rainbow Roll <span class="price">$16</span></h4>
+                    <p>Assorted fish over California roll</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/California Roll 2.png"
+                      alt="California Roll"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>California Roll <span class="price">$12</span></h4>
+                    <p>Crab, avocado, and cucumber with rice and nori</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/Spicy Tuna Roll.png"
+                      alt="Spicy Tuna Roll"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Spicy Tuna Roll <span class="price">$14</span></h4>
+                    <p>Spicy tuna with cucumber and rice</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="300">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/firecracker rolls.png"
+                      alt="Firecracker Roll"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Firecracker Roll <span class="price">$18</span></h4>
+                    <p>Spicy tuna, tempura shrimp, and spicy mayo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div
+            class="tab-pane fade"
+            id="drinks"
+            role="tabpanel">
+            <div class="row g-4">
+              <div
+                class="col-lg-6"
+                data-aos="fade-up">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/green tea.png"
+                      alt="Green Tea"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Green Tea <span class="price">$3</span></h4>
+                    <p>Traditional Japanese green tea</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/sake.png"
+                      alt="Sake"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Premium Sake <span class="price">$12</span></h4>
+                    <p>Traditional Japanese rice wine</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="200">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/japenese beer.png"
+                      alt="Japanese Beer"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Japanese Beer <span class="price">$6</span></h4>
+                    <p>Asahi, Sapporo, or Kirin</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6"
+                data-aos="fade-up"
+                data-aos-delay="300">
+                <div class="menu-item">
+                  <div class="menu-item-image">
+                    <img
+                      src="img/soft drinks.png"
+                      alt="Soft Drinks"
+                      class="img-fluid" />
+                  </div>
+                  <div class="menu-item-content">
+                    <h4>Soft Drinks <span class="price">$3</span></h4>
+                    <p>Coke, Sprite, or Ginger Ale</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Gift Card Section -->
+    <section class="newsletter-gift-section">
+      <div class="container">
+        <div class="row g-4">
+          <div
+            class="col-lg-6"
+            data-aos="fade-up">
+            <div class="newsletter-card">
+              <h3>📧 Stay Updated</h3>
+              <p
+                >Subscribe to our newsletter for exclusive offers, new menu
+                items, and special events.</p
+              >
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  required />
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  >Subscribe</button
+                >
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="gift-card">
+              <h3>🎁 Gift Cards</h3>
+              <p
+                >Give the gift of exceptional dining experience. Perfect for
+                birthdays, anniversaries, or any special occasion.</p
+              >
+              <button class="gift-card-btn">Purchase Gift Card</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5 class="text-white mb-3">Sakura Sushi</h5>
+            <p class="text-muted"
+              >Bringing authentic Japanese cuisine to your table with passion
+              and tradition.</p
+            >
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5 class="text-white mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li
+                ><a
+                  href="menu.html"
+                  class="text-muted"
+                  >Menu</a
+                ></li
+              >
+              <li
+                ><a
+                  href="about.html"
+                  class="text-muted"
+                  >About Us</a
+                ></li
+              >
+              <li
+                ><a
+                  href="contact.html"
+                  class="text-muted"
+                  >Contact</a
+                ></li
+              >
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5 class="text-white mb-3">Contact Info</h5>
+            <p class="text-muted"
+              >123 Sushi Street<br />Los Angeles, CA 90210<br />Phone: (555)
+              123-4567</p
+            >
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="text-muted mb-0"
+              >&copy; 2024 Sakura Sushi. All rights reserved.</p
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
