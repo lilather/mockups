@@ -1,0 +1,293 @@
+// ============================================
+// Main SCSS Entry Point
+// ============================================
+// Theme Purpose: Next Steps / Discipleship
+// Focus: Retention, growth, clear pathways
+// Step-based content flow, guided sections
+// ============================================
+
+// Import Variables
+@import 'variables';
+
+// Import Base Styles
+@import 'base';
+
+// ============================================
+// COMPONENT STYLES
+// ============================================
+
+// ENHANCEMENT: Hero CTAs (must-have A) — primary + secondary, variable-driven
+.hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
+    justify-content: center;
+    margin-top: var(--spacing-8);
+    
+    .btn {
+        min-height: 44px; // Must-have J: tap targets
+    }
+    
+    .btn-primary {
+        background-color: var(--cta-bg);
+        color: var(--cta-text);
+    }
+    
+    .btn-outline {
+        border-color: var(--color-text-inverse);
+        color: var(--color-text-inverse);
+        &:hover {
+            background-color: var(--color-text-inverse);
+            color: var(--color-primary);
+            border-color: var(--color-text-inverse);
+        }
+    }
+}
+
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+    // Horizontal padding here; sections using it use padding-y only
+}
+
+// ENHANCEMENT: Service Times + Location (must-have B) — variable-driven section bg
+.times-location-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-bg-secondary);
+    
+    h2 {
+        color: var(--color-primary);
+        text-align: center;
+        margin-bottom: var(--spacing-8);
+    }
+    
+    .times-location-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--card-gap);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .time-card,
+    .location-card {
+        background-color: var(--card-bg);
+        border: var(--card-border);
+        border-radius: var(--radius);
+        padding: var(--card-padding-md);
+        box-shadow: var(--shadow);
+        text-align: center;
+        
+        h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-2);
+        }
+        
+        .time {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-accent);
+        }
+        
+        p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-2);
+        }
+    }
+}
+
+// ENHANCEMENT: What to Expect (must-have C) — prominent, reduce anxiety
+.expect-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-bg);
+    
+    h2 {
+        color: var(--color-primary);
+        text-align: center;
+        margin-bottom: var(--spacing-4);
+    }
+    
+    .section-intro {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto var(--spacing-8);
+        color: var(--color-text-secondary);
+    }
+    
+    .expect-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: var(--card-gap);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .expect-item {
+        background-color: var(--card-bg);
+        border: var(--card-border);
+        border-radius: var(--radius);
+        padding: var(--card-padding-md);
+        box-shadow: var(--shadow);
+        text-align: center;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+        
+        &:hover {
+            box-shadow: var(--card-shadow-lg);
+            transform: translateY(-2px);
+        }
+        
+        h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-4);
+        }
+        
+        p {
+            color: var(--color-text-secondary);
+            margin-bottom: 0;
+        }
+    }
+}
+
+// ENHANCEMENT: FAQ (must-have I) — kids, parking, dress, service length
+.faq-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-bg-secondary);
+    
+    h2 {
+        color: var(--color-primary);
+        text-align: center;
+        margin-bottom: var(--spacing-8);
+    }
+    
+    .faq-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--card-gap);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .faq-item {
+        background-color: var(--card-bg);
+        border: var(--card-border);
+        border-radius: var(--radius);
+        padding: var(--card-padding-md);
+        box-shadow: var(--shadow);
+        
+        h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-2);
+            font-size: var(--font-size-lg);
+        }
+        
+        p {
+            color: var(--color-text-secondary);
+            margin-bottom: 0;
+            font-size: var(--font-size-sm);
+        }
+    }
+}
+
+// Step Sections
+.step-section {
+    padding: var(--spacing-16) var(--spacing-4);
+    background-color: var(--color-bg);
+    
+    &:nth-child(even) {
+        background-color: var(--color-bg-secondary);
+    }
+    
+    .step-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        h2 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-6);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-6);
+        }
+        
+        picture {
+            display: block;
+            margin-top: var(--spacing-8);
+            border-radius: var(--card-border-radius-md);
+            overflow: hidden;
+            box-shadow: var(--card-shadow-md);
+            
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+}
+
+// People / Stories Section (must-have H) — testimonials, variable-driven
+.people-section {
+    padding: var(--spacing-16) var(--spacing-4);
+    text-align: center;
+    background-color: var(--color-bg);
+    
+    h2 {
+        color: var(--color-primary);
+        margin-bottom: var(--spacing-12);
+    }
+    
+    .people-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--card-gap);
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        .person-card {
+            background-color: var(--card-bg);
+            border: var(--card-border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+            
+            &:hover {
+                box-shadow: var(--card-shadow-lg);
+                transform: translateY(-4px);
+            }
+            
+            picture {
+                display: block;
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    border-radius: 0;
+                    transition: transform 0.2s ease-in-out;
+                }
+            }
+            
+            .testimonial {
+                padding: var(--card-padding-md);
+                margin: 0;
+                font-size: var(--font-size-sm);
+                font-style: italic;
+                color: var(--color-text-secondary);
+                line-height: var(--line-height-relaxed);
+                text-align: left;
+                border: none;
+            }
+            
+            &:hover picture img {
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+
+
+

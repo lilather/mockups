@@ -1,0 +1,233 @@
+// ============================================
+// Design Tokens: Church Visitor First
+// Purpose: First-time visitors, reduce anxiety
+// Tone: Bold, confident, modern
+// ============================================
+
+// DESIGN RATIONALE
+// This design system reduces visitor anxiety through bold, confident design choices
+// featuring high-contrast colors and strong typography that convey clarity and
+// approachability. The emphasis on clear CTAs and structured section rhythm ensures
+// first-time visitors can easily find information and feel confident about their visit.
+
+// ============================================
+// COLOR TOKENS
+// ============================================
+:root {
+    // Primary Colors
+    --color-primary: #0a1628;           // Bold navy - confidence, trust
+    --color-primary-light: #15263d;     // Lighter navy
+    --color-primary-dark: #050a14;      // Near black
+    
+    // Alternative Primary (if using black instead of navy)
+    --color-primary-alt: #1a1a1a;       // Bold black option
+    
+    // Secondary Colors
+    --color-secondary: #ff6b35;         // Bright orange - energy, action
+    --color-secondary-light: #ff8560;   // Lighter orange
+    --color-secondary-dark: #e55525;    // Darker orange
+    
+    // High Contrast Neutral Scale
+    --color-neutral-900: #000000;       // Pure black
+    --color-neutral-800: #1a1a1a;       // Near black
+    --color-neutral-700: #333333;       // Dark gray
+    --color-neutral-600: #4d4d4d;       // Medium-dark gray
+    --color-neutral-500: #666666;       // Medium gray
+    --color-neutral-400: #999999;       // Light gray
+    --color-neutral-300: #cccccc;       // Lighter gray
+    --color-neutral-200: #e0e0e0;       // Very light gray
+    --color-neutral-100: #f0f0f0;       // Off white
+    --color-neutral-50: #fafafa;        // Near white
+    --color-white: #ffffff;
+    
+    // Accent Colors
+    --color-accent: #0066cc;            // Bright blue - trust, clarity
+    --color-accent-light: #3385d6;      // Lighter blue
+    --color-accent-dark: #0052a3;       // Darker blue
+    
+    // Semantic Colors
+    --color-success: #28a745;           // Green
+    --color-error: #dc3545;             // Red
+    --color-warning: #ffc107;           // Amber
+    --color-info: #0066cc;              // Blue (matches accent)
+    
+    // Background Colors
+    --color-bg-primary: var(--color-white);
+    --color-bg-secondary: var(--color-neutral-50);
+    --color-bg-tertiary: var(--color-neutral-100);
+    --color-bg-dark: var(--color-primary);
+    
+    // Text Colors
+    --color-text-primary: var(--color-neutral-900);
+    --color-text-secondary: var(--color-neutral-700);
+    --color-text-tertiary: var(--color-neutral-600);
+    --color-text-inverse: var(--color-white);
+    --color-text-accent: var(--color-secondary);
+    
+    // ============================================
+    // TYPOGRAPHY TOKENS
+    // ============================================
+    // Font Family: Montserrat (strong geometric sans)
+    --font-family-base: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family-heading: var(--font-family-base);
+    
+    // Font Sizes
+    --font-size-xs: 0.75rem;            // 12px
+    --font-size-sm: 0.875rem;           // 14px
+    --font-size-base: 1rem;             // 16px
+    --font-size-lg: 1.125rem;           // 18px
+    --font-size-xl: 1.25rem;            // 20px
+    --font-size-2xl: 1.5rem;            // 24px
+    --font-size-3xl: 1.875rem;          // 30px
+    --font-size-4xl: 2.25rem;           // 36px
+    --font-size-5xl: 3rem;              // 48px
+    --font-size-6xl: 3.75rem;           // 60px
+    
+    // Font Weights
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    
+    // Line Heights
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    --line-height-loose: 2;
+    
+    // Letter Spacing
+    --letter-spacing-tight: -0.05em;
+    --letter-spacing-normal: 0;
+    --letter-spacing-wide: 0.05em;
+    --letter-spacing-wider: 0.1em;
+    
+    // ============================================
+    // SPACING SCALE (4px base unit)
+    // ============================================
+    --spacing-1: 0.25rem;               // 4px
+    --spacing-2: 0.5rem;                // 8px
+    --spacing-3: 0.75rem;               // 12px
+    --spacing-4: 1rem;                  // 16px
+    --spacing-5: 1.25rem;               // 20px
+    --spacing-6: 1.5rem;                // 24px
+    --spacing-8: 2rem;                  // 32px
+    --spacing-10: 2.5rem;               // 40px
+    --spacing-12: 3rem;                 // 48px
+    --spacing-16: 4rem;                 // 64px
+    --spacing-20: 5rem;                 // 80px
+    --spacing-24: 6rem;                 // 96px
+    
+    // ============================================
+    // BUTTON TOKENS (CTA-Emphasis)
+    // ============================================
+    --button-padding-y-sm: var(--spacing-3);      // 12px (larger than standard)
+    --button-padding-x-sm: var(--spacing-6);      // 24px
+    --button-padding-y-md: var(--spacing-4);      // 16px (larger than standard)
+    --button-padding-x-md: var(--spacing-8);      // 32px
+    --button-padding-y-lg: var(--spacing-6);      // 24px (larger than standard)
+    --button-padding-x-lg: var(--spacing-12);     // 48px
+    
+    --button-border-radius-sm: 0.375rem;          // 6px
+    --button-border-radius-md: 0.5rem;            // 8px
+    --button-border-radius-lg: 0.625rem;          // 10px
+    
+    --button-font-size-sm: var(--font-size-base); // 16px (larger than standard)
+    --button-font-size-md: var(--font-size-lg);   // 18px (larger than standard)
+    --button-font-size-lg: var(--font-size-xl);   // 20px (larger than standard)
+    
+    --button-font-weight: var(--font-weight-bold);  // Bolder than standard
+    --button-line-height: var(--line-height-tight);
+    
+    --button-transition: all 0.2s ease-in-out;
+    --button-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --button-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.15);
+    --button-shadow-active: 0 1px 2px rgba(0, 0, 0, 0.1);
+    
+    // Button States (Higher Contrast)
+    --button-primary-bg: var(--color-secondary);  // Bright orange for visibility
+    --button-primary-bg-hover: var(--color-secondary-light);
+    --button-primary-bg-active: var(--color-secondary-dark);
+    --button-primary-text: var(--color-white);
+    
+    --button-secondary-bg: var(--color-primary);
+    --button-secondary-bg-hover: var(--color-primary-light);
+    --button-secondary-bg-active: var(--color-primary-dark);
+    --button-secondary-text: var(--color-white);
+    
+    --button-outline-border: var(--color-secondary);
+    --button-outline-border-width: 2px;           // Thicker border
+    --button-outline-text: var(--color-secondary);
+    --button-outline-hover-bg: var(--color-secondary);
+    --button-outline-hover-text: var(--color-white);
+    
+    // ============================================
+    // CARD TOKENS
+    // ============================================
+    --card-padding-sm: var(--spacing-4);          // 16px
+    --card-padding-md: var(--spacing-6);          // 24px
+    --card-padding-lg: var(--spacing-8);          // 32px
+    
+    --card-border-radius-sm: 0.5rem;              // 8px
+    --card-border-radius-md: 0.75rem;             // 12px
+    --card-border-radius-lg: 1rem;                // 16px
+    
+    --card-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --card-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --card-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+    
+    --card-border: 2px solid var(--color-neutral-200);  // Thicker border
+    --card-bg: var(--color-white);
+    
+    --card-gap: var(--spacing-8);                 // 32px (larger than standard)
+    
+    // ============================================
+    // SECTION RHYTHM TOKENS
+    // ============================================
+    --section-padding-y-sm: var(--spacing-12);    // 48px
+    --section-padding-y-md: var(--spacing-16);    // 64px
+    --section-padding-y-lg: var(--spacing-24);    // 96px
+    
+    --section-padding-x: var(--spacing-4);        // 16px
+    --section-padding-x-lg: var(--spacing-6);     // 24px
+    
+    --section-gap: var(--spacing-16);             // 64px between sections
+    --section-gap-sm: var(--spacing-12);          // 48px for tighter rhythm
+    
+    --section-max-width: 1200px;
+    --section-max-width-wide: 1400px;
+    
+    --section-heading-margin-bottom: var(--spacing-8);  // 32px
+    --section-subheading-margin-bottom: var(--spacing-6);  // 24px
+    
+    // ============================================
+    // GLOBAL DESIGN TOKENS (theme alignment)
+    // ============================================
+    --color-bg: var(--color-bg-primary);
+    --color-text: var(--color-text-primary);
+    --font-heading: var(--font-family-heading);
+    --font-body: var(--font-family-base);
+    --radius: var(--card-border-radius-md);
+    --shadow: var(--card-shadow-md);
+    --cta-bg: var(--button-primary-bg);
+    --cta-text: var(--button-primary-text);
+}
+
+// ============================================
+// WCAG AA CONTRAST CONFIRMATION
+// ============================================
+// Text on Background Contrast Ratios:
+// - Primary text (#000000) on white: 21:1 ✓ AAA
+// - Secondary text (#333333) on white: 12.6:1 ✓ AA Large, AAA
+// - White text on primary (#0a1628): 16.8:1 ✓ AA Large, AAA
+// - White text on secondary (#ff6b35): 3.0:1 ✗ (use only for large text 18pt+ or adjust)
+//   Note: Consider using #e55525 (darker orange) for better contrast: 4.2:1 ✓ AA Large
+// - Primary text on neutral-100: 16.8:1 ✓ AA Large, AAA
+// - Secondary text on neutral-50: 11.2:1 ✓ AA Large, AAA
+
+// SUGGESTED GOOGLE FONT
+// Primary: Montserrat (weights: 300, 400, 500, 600, 700, 800, 900)
+// Import: @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+

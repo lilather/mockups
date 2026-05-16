@@ -1,0 +1,353 @@
+// ============================================
+// Main SCSS Entry Point
+// ============================================
+// Theme Purpose: Visitor-First / Plan Your Visit
+// Focus: First-time visitors, anxiety-reducing structure
+// Clear answers and directions
+// ============================================
+
+// Import Variables
+@import 'variables';
+
+// Import Base Styles
+@import 'base';
+
+// ============================================
+// COMPONENT STYLES
+// ============================================
+
+// ENHANCEMENT: Hero CTAs (must-have A) — variable-driven, tap targets
+.hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
+    justify-content: center;
+    margin-top: var(--spacing-8);
+    .btn { min-height: 44px; }
+    .btn-primary { background-color: var(--cta-bg); color: var(--cta-text); }
+    .btn-outline {
+        border-color: var(--color-text-inverse);
+        color: var(--color-text-inverse);
+        &:hover {
+            background-color: var(--color-text-inverse);
+            color: var(--color-primary);
+            border-color: var(--color-text-inverse);
+        }
+    }
+}
+
+// ENHANCEMENT: Livestream / Online Church (must-have D) — above fold, immediately after hero
+.livestream-section.cta-block {
+    background-color: var(--color-bg-dark);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    text-align: center;
+    .section-content {
+        max-width: var(--section-max-width);
+        margin: 0 auto;
+        h2 { color: var(--color-text-inverse); margin-bottom: var(--spacing-4); }
+        .section-intro { color: var(--color-text-inverse); opacity: 0.95; margin: 0 auto var(--spacing-8); max-width: 600px; }
+        .livestream-cta {
+            margin-bottom: var(--spacing-6);
+            .btn { background-color: var(--cta-bg); color: var(--cta-text); }
+            .livestream-note { color: var(--color-text-inverse); opacity: 0.9; font-size: var(--font-size-sm); margin-top: var(--spacing-4); }
+        }
+        .section-outro { color: var(--color-text-inverse); opacity: 0.85; font-size: var(--font-size-sm); }
+    }
+}
+
+// ENHANCEMENT: Next Steps (must-have E) — digital guest pathway
+.next-steps-section {
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    background-color: var(--color-bg);
+    h2 { color: var(--color-primary); text-align: center; margin-bottom: var(--spacing-4); }
+    .section-intro { text-align: center; max-width: 600px; margin: 0 auto var(--spacing-8); color: var(--color-text-secondary); }
+    .next-steps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--card-gap);
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .next-step-card {
+        display: block;
+        background-color: var(--card-bg);
+        border: var(--card-border);
+        border-radius: var(--radius);
+        padding: var(--card-padding-md);
+        box-shadow: var(--shadow);
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+        min-height: 44px;
+        &:hover { box-shadow: var(--card-shadow-lg); transform: translateY(-4px); }
+        h3 { color: var(--color-secondary); margin-bottom: var(--spacing-2); }
+        p { color: var(--color-text-secondary); margin-bottom: 0; font-size: var(--font-size-sm); }
+    }
+}
+
+// ENHANCEMENT: Giving (must-have G) — impact-focused, why it matters
+.giving-section.cta-block {
+    background-color: var(--color-bg-secondary);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    text-align: center;
+    .section-content {
+        max-width: 700px;
+        margin: 0 auto;
+        h2 { color: var(--color-primary); margin-bottom: var(--spacing-4); }
+        .section-intro { color: var(--color-text-secondary); margin-bottom: var(--spacing-8); line-height: var(--line-height-relaxed); }
+        .giving-impact {
+            list-style: none;
+            margin: 0 0 var(--spacing-8);
+            padding: 0;
+            text-align: left;
+            li {
+                padding: var(--spacing-3) 0;
+                border-bottom: 1px solid var(--color-neutral-200);
+                color: var(--color-text-secondary);
+                strong { color: var(--color-primary); }
+                &:last-child { border-bottom: none; }
+            }
+        }
+        .btn { background-color: var(--cta-bg); color: var(--cta-text); }
+    }
+}
+
+// What to Expect Section (must-have C)
+.expect-section {
+    background-color: var(--color-bg);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    
+    .section-content {
+        h2 {
+            color: var(--color-primary);
+            text-align: center;
+        }
+    }
+    
+    .expect-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--card-gap);
+        margin-top: var(--spacing-8);
+        
+        .expect-item {
+            text-align: center;
+            padding: var(--card-padding-md);
+            background-color: var(--card-bg);
+            border: var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+            
+            &:hover {
+                box-shadow: var(--card-shadow-md);
+                transform: translateY(-2px);
+            }
+            
+            h3 {
+                color: var(--color-primary);
+                margin-bottom: var(--spacing-4);
+            }
+            
+            p {
+                line-height: var(--line-height-relaxed);
+                color: var(--color-text-secondary);
+            }
+        }
+    }
+}
+
+// Service Times Section (must-have B)
+.times-section {
+    text-align: center;
+    background-color: var(--color-bg-secondary);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    
+    .section-content {
+        h2 {
+            color: var(--color-primary);
+        }
+    }
+    
+    .times-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: var(--card-gap);
+        margin-top: var(--spacing-8);
+        
+        .time-item {
+            padding: var(--card-padding-lg);
+            background-color: var(--card-bg);
+            border: var(--card-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            
+            h3 {
+                color: var(--color-primary);
+                margin-bottom: var(--spacing-2);
+            }
+            
+            p {
+                font-size: var(--font-size-3xl);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-secondary);
+            }
+        }
+    }
+}
+
+// Location Section (must-have B)
+.location-section {
+    background-color: var(--color-bg);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    
+    .section-content {
+        h2 {
+            color: var(--color-primary);
+            text-align: center;
+        }
+        
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-12);
+            margin-top: var(--spacing-8);
+            align-items: center;
+            
+            picture {
+                display: block;
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    border-radius: var(--radius);
+                    box-shadow: var(--shadow);
+                }
+            }
+            
+            .location-info {
+                p {
+                    margin-bottom: var(--spacing-6);
+                    line-height: var(--line-height-relaxed);
+                    color: var(--color-text-secondary);
+                    
+                    strong {
+                        color: var(--color-primary);
+                        font-weight: var(--font-weight-bold);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Questions Section (must-have I)
+.questions-section {
+    background-color: var(--color-bg-secondary);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    
+    .section-content {
+        h2 {
+            color: var(--color-primary);
+            text-align: center;
+        }
+        
+        .questions-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--card-gap);
+            margin-top: var(--spacing-8);
+            
+            .question-item {
+                padding: var(--card-padding-md);
+                background-color: var(--card-bg);
+                border: var(--card-border);
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+                
+                &:hover {
+                    box-shadow: var(--card-shadow-md);
+                    transform: translateY(-2px);
+                }
+                
+                h3 {
+                    color: var(--color-secondary);
+                    margin-bottom: var(--spacing-4);
+                }
+                
+                p {
+                    line-height: var(--line-height-relaxed);
+                    color: var(--color-text-secondary);
+                }
+            }
+        }
+    }
+}
+
+// People / Stories Section (must-have H) — testimonials, variable-driven
+.people-section {
+    text-align: center;
+    background-color: var(--color-bg);
+    padding: var(--section-padding-y-md) var(--section-padding-x);
+    
+    .section-content {
+        h2 { color: var(--color-primary); }
+        .people-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--card-gap);
+            margin-top: var(--spacing-8);
+            
+            .people-item {
+                background-color: var(--card-bg);
+                border: var(--card-border);
+                border-radius: var(--radius);
+                overflow: hidden;
+                box-shadow: var(--shadow);
+                transition: box-shadow 0.2s ease, transform 0.2s ease;
+                &:hover { box-shadow: var(--card-shadow-lg); transform: translateY(-4px); }
+                
+                picture {
+                    display: block;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        border-radius: 0;
+                        transition: transform 0.2s ease;
+                    }
+                }
+                .testimonial {
+                    padding: var(--card-padding-md);
+                    margin: 0;
+                    font-size: var(--font-size-sm);
+                    font-style: italic;
+                    color: var(--color-text-secondary);
+                    line-height: var(--line-height-relaxed);
+                    text-align: left;
+                    border: none;
+                }
+                &:hover picture img { transform: scale(1.02); }
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .location-section {
+        .section-content {
+            .location-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-8);
+            }
+        }
+    }
+}
+
+
+
+
