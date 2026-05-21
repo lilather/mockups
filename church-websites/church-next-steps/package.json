@@ -1,0 +1,29 @@
+{
+  "name": "church-next-steps",
+  "version": "1.0.0",
+  "description": "Next Steps / Discipleship church website",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "clean": "gulp clean"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.5",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-terser": "^2.1.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-webp": "^3.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-zip": "^5.1.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
+
+
