@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fusion Burgers</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="top_bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-9 top-info">
+              <div class="phone">
+                <span>Phone:</span>
+                <i class="fas fa-phone"></i>
+                (555) 123-4567
+              </div>
+              <div class="email">
+                <span>Email:</span>
+                <i class="fa-solid fa-envelope"></i>
+                info@burgerfusion.com
+              </div>
+              <div class="col-3 top-social-icons">
+                <span>Socials:</span>
+                <a href="https://www.facebook.com/example" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/example" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.snapchat.com/add/example" target="_blank">
+                  <i class="fab fa-snapchat-ghost"></i>
+                </a>
+                <a href="https://www.tiktok.com/add/example" target="_blank">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fusion Burger</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#featured">Featured Burgers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#menu">The Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gift-cards">Gift Cards</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mobile-rewards">The Mobile App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#locations">Locations</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hero-img-one">
+          <div class="hero-img-one-content">
+            <h1>Where Good Times and Great Burgers Meet</h1>
+            <div class="order-text">
+              Order online, curbside or pickup
+              <i class="fas fa-arrow-circle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="about" class="about container">
+        <div class="row flex-wrap-reverse">
+          <div class="col-xl-6 about-text">
+            <h2>About Fusion</h2>
+            <div class="h2-border"></div>
+            <p>
+              At Burger Fusion, our philosophy is simple: we fuse flavors from
+              around the world to create innovative and mouthwatering burger
+              creations.
+            </p>
+            <p>
+              Drawing inspiration from diverse culinary traditions, we combine
+              traditional American favorites with global ingredients and spices.
+            </p>
+            <p>
+              The result? A symphony of taste that elevates your burger
+              experience to new heights.
+            </p>
+          </div>
+          <div class="col-xl-6 about-pic">
+            <img
+              src="./images/Delicious-burger-with-flying-ingredients.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <section id="featured" class="featured-burger container">
+        <div class="row flex-wrap-reverse">
+          <div class="col-xl-6 featured-burger-content">
+            <h2>Featured Burger</h2>
+            <h3>The All American</h3>
+            <p>
+              Experience the "All-American Classic Burger" - a timeless favorite
+              with a juicy beef patty, creamy American cheese, crisp lettuce,
+              sliced tomatoes, tangy pickles, onions, ketchup, and mustard. An
+              iconic taste of Americana that captures the essence of a true
+              burger classic!
+            </p>
+            <button>Order Now!</button>
+          </div>
+          <div class="col-xl-6 featured-burger-pic">
+            <img src="./images/featured-burger-main.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="burger-menu container">
+        <h2>The Burger Menu</h2>
+        <div class="row burger-grid">
+          <div class="col-xl-4 burgers">
+            <img
+              src="./images/burger1.jpeg
+"
+              alt=""
+              srcset=""
+            />
+            <div class="burger-name">
+              The Creamy Lamb
+              <i class="fas fa-arrow-circle-right"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+              <div>
+                <div class="burger-info">
+                  <p>
+                    Savor "The Creamy Lamb" – a divine lamb patty paired with
+                    creamy Feta, fresh cucumber, tomatoes, and tangy Tzatziki. A
+                    taste of the Mediterranean in every delicious bite.
+                  </p>
+                  <button>order now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 burgers">
+            <img
+              src="./images/burger2.jpeg
+"
+              alt=""
+              srcset=""
+            />
+            <div class="burger-name">
+              The Inferno
+              <i class="fas fa-arrow-circle-right"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+              <div>
+                <div class="burger-info">
+                  <p>
+                    Introducing the "Double Beef Inferno Burger" - a fiery feast
+                    with double beef patties, crispy bacon, spinach, pepper jack
+                    cheese, and chipotle mayo. A blazing taste sensation!
+                  </p>
+                  <button>order now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 burgers">
+            <img
+              src="./images/burger3.jpeg
+"
+              alt=""
+              srcset=""
+            />
+            <div class="burger-name">
+              The Blue Bison
+              <i class="fas fa-arrow-circle-right"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+              <div>
+                <div class="burger-info">
+                  <p>
+                    The "Blue Bison Classic" is a timeless delight. A
+                    mouthwatering bison patty topped with velvety blue cheese,
+                    crisp lettuce, and sweet caramelized onions.
+                  </p>
+                  <button>order now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 burgers">
+            <img
+              src="./images/burger4.jpeg
+"
+              alt=""
+              srcset=""
+            />
+            <div class="burger-name">
+              The Duckylicious
+              <i class="fas fa-arrow-circle-right"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+              <div>
+                <div class="burger-info">
+                  <p>
+                    Introducing the "Duckyliscious Burger": a delectable
+                    masterpiece with juicy beef, crispy bacon, a mouthwatering
+                    fried duck egg, melted cheddar, fresh lettuce, and zesty
+                    mayo.
+                  </p>
+                  <button>order now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 burgers">
+            <img
+              src="./images/burger5.jpeg
+"
+              alt=""
+              srcset=""
+            />
+            <div class="burger-name">
+              the hawaiian luau
+              <i class="fas fa-arrow-circle-right"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+              <div>
+                <div class="burger-info">
+                  <p>
+                    Enjoy the "Hawaiian Bliss Burger" - a tropical delight
+                    featuring a juicy beef patty, sweet pineapple, Swiss cheese,
+                    crisp lettuce, and a tangy teriyaki glaze.
+                  </p>
+                  <button>order now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 burgers">
+            <img
+              src="./images/burger6.jpeg
+"
+              alt=""
+              srcset=""
+            />
+            <div class="burger-name">
+              The Lone Star
+              <i class="fas fa-arrow-circle-right"></i>
+              <i class="fas fa-arrow-circle-up"></i>
+              <div>
+                <div class="burger-info">
+                  <p>
+                    Try the "Lone Star Burger": a true Texan delight with a
+                    juicy beef patty, crunchy onion rings, melted cheddar
+                    cheese, fresh lettuce, and tangy barbecue sauce.
+                  </p>
+                  <button>order now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gift-cards" class="gift-cards">
+        <div class="gift-cards-content">
+          <h2>Gift Cards</h2>
+          <div class="h2-border"></div>
+        </div>
+        <div class="gift-cards-overlay"></div>
+      </section>
+      <section id="mobile-rewards" class="mobile-rewards container-fluid px-0">
+        <div class="row flex-wrap-reverse">
+          <div class="col-xl-6 mobile-rewards-content">
+            <h2>MOBILE REWARDS</h2>
+            <p class="fw-light">
+              Earn rewards, level up into higher tiers, and get the most out of
+              every visit.
+            </p>
+            <p class="fw-bold download-app">DOWNLOAD THE APP AND EARN NOW</p>
+            <img
+              class="app-download"
+              src="./images/apple-app-store.png"
+              alt=""
+            />
+            <img
+              class="app-download"
+              src="./images/google-app-store.png"
+              alt=""
+            />
+          </div>
+          <div class="col-xl-6 mobile-rewards-pic">
+            <div class="video-background">
+              <video autoplay loop muted>
+                <source src="./images/mobile-rewards.mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="locations">
+        <h2>Our Locations</h2>
+        <div class="h2-border"></div>
+
+        <div id="map" style="height: 500px"></div>
+      </section>
+      <footer>© 2023 Assure Studios. All rights reserved</footer>
+      <button id="go-to-top" style="display: block">
+        <i
+          class="fa fa-arrow-circle-up"
+          title="scroll up"
+          aria-hidden="true"
+        ></i>
+      </button>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div
+      class="modal fade"
+      id="orderModal"
+      tabindex="-1"
+      aria-labelledby="orderModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderModalLabel">Order Confirmation</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="order-details">
+              <h6 id="burgerName">Burger Name</h6>
+              <p class="burger-description" id="burgerDescription">
+                Burger description will appear here
+              </p>
+              <div class="order-options">
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <select class="form-control" id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="specialInstructions">Special Instructions:</label>
+                  <textarea
+                    class="form-control"
+                    id="specialInstructions"
+                    rows="3"
+                    placeholder="Any special requests?"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary confirm-order-btn">
+              Confirm Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <!-- Leaflet CSS and JS for free maps -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      integrity="sha512-a+6pB4WZd2xYk46DzRfmePhgFqmM6y8SNKVzLGB/RSj9/1cGq/t5kL4pJsGocBN8MCcHTesHR4yXueoGBA7dgg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        spaceBetween: 100
+      });
+    </script>
+  </body>
+</html>
