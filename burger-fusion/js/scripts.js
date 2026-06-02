@@ -1,15 +1,5 @@
-// JavaScript code to handle the reset when mouse rolls away from "burger-name"
-const burgerName = document.querySelector(".burger-name");
-
-burgerName.addEventListener("mouseout", () => {
-  const burgerUp = burgerName.querySelector(".fa-arrow-circle-up");
-  const burgerDown = burgerName.querySelector(".fa-arrow-circle-down");
-  const burgerInfo = burgerName.querySelector(".burger-info");
-
-  burgerDown.style.display = "none";
-  burgerInfo.style.display = "none";
-  burgerInfo.style.maxHeight = "0";
-});
+// Note: the burger card expand/collapse on hover is handled entirely in CSS
+// (.burger-name:hover .burger-info), so no JS is needed for that.
 
 const giftCardsSection = document.querySelector(".gift-cards");
 const giftCardsOverlay = document.querySelector(".gift-cards-overlay");
