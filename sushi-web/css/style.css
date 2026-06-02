@@ -695,3 +695,28 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-hover);
 }
+
+/* Emoji icon badges (replacing former placeholder.com images) */
+.value-emoji,
+.award-emoji,
+.contact-emoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark-secondary);
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.value-emoji {
+  width: 80px;
+  height: 80px;
+  font-size: 2.5rem;
+}
+
+.contact-emoji,
+.award-emoji {
+  width: 60px;
+  height: 60px;
+  font-size: 1.8rem;
+}
