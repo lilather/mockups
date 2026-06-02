@@ -245,22 +245,21 @@ function initConsultationBanner() {
 
 // Mobile Menu Toggle
 function initMobileMenu() {
-  const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('.navbar-collapse');
+  if (!navbarCollapse) return;
 
-  if (navbarToggler && navbarCollapse) {
-    navbarToggler.addEventListener('click', () => {
-      navbarCollapse.classList.toggle('show');
+  // Bootstrap's bundle already opens/closes the menu via the toggler's
+  // data-bs-toggle attribute. Toggling .show ourselves too made it open
+  // then immediately close again. Only add "close after tapping a link",
+  // using Bootstrap's Collapse API so its internal state stays in sync.
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (navbarCollapse.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+      }
     });
-
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        navbarCollapse.classList.remove('show');
-      });
-    });
-  }
+  });
 }
 
 // Parallax Effect

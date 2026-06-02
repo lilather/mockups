@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Bean & Brew - Artisan Coffee Roastery</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      preload
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-image">
+
+    </div>
+    <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            href="#home">
+            <i class="fas fa-coffee"></i>
+            BEAN & BREW
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="#home"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#menu"
+                  >MENU</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#beans"
+                  >BEANS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#customers"
+                  >HAPPY CUSTOMERS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#join"
+                  >JOIN THE CLUB</a
+                >
+              </li>
+              <li class="nav-item">
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section"
+      id="home">
+      <div class="hero-background">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h2>Artisan Coffee Roastery</h2>
+          <h1>Bean & Brew</h1>
+          <p>Handcrafted coffee experiences since 2010</p>
+          <button class="btn-primary">Explore Our Menu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="menu">
+      <div class="categories-grid">
+        <div
+          class="category-item"
+          data-category="hot-coffee">
+          <div class="category-icon">
+            <img
+              src="images/categorys/coffee.png"
+              alt="Hot Coffee" />
+          </div>
+          <span>Hot Coffees</span>
+        </div>
+        <div
+          class="category-item"
+          data-category="ice-coffee">
+          <div class="category-icon">
+            <img
+              src="images/categorys/ice cofee.png"
+              alt="Ice Coffee" />
+          </div>
+          <span>Ice Coffees</span>
+        </div>
+        <div
+          class="category-item"
+          data-category="espresso">
+          <div class="category-icon">
+            <img
+              src="images/categorys/espresso.png"
+              alt="Espresso" />
+          </div>
+          <span>Espressos</span>
+        </div>
+        <div
+          class="category-item"
+          data-category="pastry">
+          <div class="category-icon">
+            <img
+              src="images/categorys/pastry.png"
+              alt="Pastry" />
+          </div>
+          <span>Pastries</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hot Coffees Section -->
+    <section
+      class="products-section"
+      id="hot-coffee"
+      data-category="hot-coffee">
+      <div class="container">
+        <h2 class="section-title">HOT COFFEES</h2>
+        <div class="products-carousel">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/cafe latte.png"
+                  alt="Cafe Latte" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Cafe Latte</h3>
+                <p>Smooth espresso with steamed milk</p>
+                <div class="product-footer">
+                  <span class="price">$4.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/cappuchino.png"
+                  alt="Cappuccino" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Cappuccino</h3>
+                <p>Espresso with equal parts steamed milk and foam</p>
+                <div class="product-footer">
+                  <span class="price">$4.00</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/americano.png"
+                  alt="Americano" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Americano</h3>
+                <p>Espresso with hot water</p>
+                <div class="product-footer">
+                  <span class="price">$3.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ice Coffees Section -->
+    <section
+      class="products-section"
+      id="ice-coffee"
+      data-category="ice-coffee"
+      style="display: none">
+      <div class="container">
+        <h2 class="section-title">ICE COFFEES</h2>
+        <div class="products-carousel">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/ice coffee.png"
+                  alt="Iced Coffee" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Iced Coffee</h3>
+                <p>Cold espresso with cold milk over ice</p>
+                <div class="product-footer">
+                  <span class="price">$5.00</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/dalgona.png"
+                  alt="Dalgona Coffee" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Dalgona Coffee</h3>
+                <p>Whipped coffee with milk and sugar</p>
+                <div class="product-footer">
+                  <span class="price">$5.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/cold brew.png"
+                  alt="Cold Brew" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Cold Brew</h3>
+                <p>Slow-brewed coffee served cold</p>
+                <div class="product-footer">
+                  <span class="price">$4.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Espressos Section -->
+    <section
+      class="products-section"
+      id="espresso"
+      data-category="espresso"
+      style="display: none">
+      <div class="container">
+        <h2 class="section-title">ESPRESSOS</h2>
+        <div class="products-carousel">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/expresso.png"
+                  alt="Espresso" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Espresso</h3>
+                <p>Concentrated coffee shot</p>
+                <div class="product-footer">
+                  <span class="price">$3.00</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/double expresso.png"
+                  alt="Double Espresso" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Double Espresso</h3>
+                <p>Two shots of concentrated coffee</p>
+                <div class="product-footer">
+                  <span class="price">$4.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/Ristretto.png"
+                  alt="Ristretto" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Ristretto</h3>
+                <p>Short, concentrated espresso shot</p>
+                <div class="product-footer">
+                  <span class="price">$2.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pastries Section -->
+    <section
+      class="products-section"
+      id="pastry"
+      data-category="pastry"
+      style="display: none">
+      <div class="container">
+        <h2 class="section-title">PASTRIES</h2>
+        <div class="products-carousel">
+          <div class="products-grid">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/crosiant.png"
+                  alt="Croissant" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Croissant</h3>
+                <p>Buttery, flaky French pastry</p>
+                <div class="product-footer">
+                  <span class="price">$2.00</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/chocolate muffin.png"
+                  alt="Chocolate Muffin" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Chocolate Muffin</h3>
+                <p>Rich chocolate muffin with chocolate chips</p>
+                <div class="product-footer">
+                  <span class="price">$1.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/apple danish.png"
+                  alt="Apple Danish" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Apple Danish</h3>
+                <p>Sweet pastry with apple filling</p>
+                <div class="product-footer">
+                  <span class="price">$1.75</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/almon crossiant.png"
+                  alt="Almond Croissant" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Almond Croissant</h3>
+                <p>Buttery croissant filled with almond paste</p>
+                <div class="product-footer">
+                  <span class="price">$3.50</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/blueberry scone.png"
+                  alt="Blueberry Scone" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Blueberry Scone</h3>
+                <p>Traditional British scone with fresh blueberries</p>
+                <div class="product-footer">
+                  <span class="price">$2.75</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="images/apple danish.png"
+                  alt="Churros" />
+                <button class="favorite-btn">
+                  <i class="fas fa-heart"></i>
+                </button>
+              </div>
+              <div class="product-info">
+                <h3>Churros</h3>
+                <p>Spanish fried dough with cinnamon sugar</p>
+                <div class="product-footer">
+                  <span class="price">$5.00</span>
+                  <button class="order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Coffee Beans Section -->
+    <section class="beans-section" id="beans">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="beans-image">
+              <img
+                src="images/Coffee bags.png"
+                alt="Coffee Beans" />
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="beans-text">
+              <h2>Check out our best coffee beans</h2>
+              <button class="btn-primary">Explore our products >></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="customers">
+      <div class="container">
+        <h2 class="section-title">Come and join OUR HAPPY CUSTOMERS</h2>
+        <div class="testimonials-carousel">
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="customer-image">
+                <img
+                  src="images/profile pics/1.png"
+                  alt="Jane Adams" />
+              </div>
+              <div class="testimonial-info">
+                <h3>Jane Adams</h3>
+                <p class="customer-title">Freelancer</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text"
+                  >"Amazing coffee! The best I've ever had. Perfect for my
+                  morning routine."</p
+                >
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="customer-image">
+                <img
+                  src="images/profile pics/2.png"
+                  alt="Sam Williams" />
+              </div>
+              <div class="testimonial-info">
+                <h3>Sam Williams</h3>
+                <p class="customer-title">Entrepreneur</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <p class="testimonial-text"
+                  >"Great atmosphere and excellent service. Coffee is always
+                  fresh and delicious."</p
+                >
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="customer-image">
+                <img
+                  src="images/profile pics/3.png"
+                  alt="Angela Gonzales" />
+              </div>
+              <div class="testimonial-info">
+                <h3>Angela Gonzales</h3>
+                <p class="customer-title">Manager</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text"
+                  >"Perfect place for meetings. The coffee quality is
+                  outstanding!"</p
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="join">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="newsletter-image">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="newsletter-text">
+              <h2>Join in and get 15% Off!</h2>
+              <p>Subscribe to our newsletter and get 15% off discount code.</p>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  required />
+                <button
+                  type="submit"
+                  class="btn-primary"
+                  >Subscribe</button
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span>BEAN &amp; BREW</span>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>PRIVACY</h4>
+              <ul>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>SERVICES</h4>
+              <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Order ahead</a></li>
+                <li><a href="#">Menu</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>ABOUT US</h4>
+              <ul>
+                <li><a href="#">Find a location</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our story</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>INFORMATION</h4>
+              <ul>
+                <li><a href="#">Plans & pricing</a></li>
+                <li><a href="#">Sell your products</a></li>
+                <li><a href="#">Jobs</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <h4>SOCIAL MEDIA</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Jump to Top Button -->
+    <button
+      id="jumpToTop"
+      class="jump-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

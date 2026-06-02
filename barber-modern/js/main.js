@@ -354,22 +354,22 @@ function openLightbox(src, alt) {
 
 // Mobile Menu Toggle
 function initMobileMenu() {
-  const navbarToggler = document.querySelector('.navbar-toggler');
   const navbarCollapse = document.querySelector('.navbar-collapse');
+  if (!navbarCollapse) return;
 
-  if (navbarToggler && navbarCollapse) {
-    navbarToggler.addEventListener('click', () => {
-      navbarCollapse.classList.toggle('show');
+  // Bootstrap's bundle already handles opening/closing via the toggler's
+  // data-bs-toggle attribute, so we must NOT toggle .show ourselves here
+  // (doing both makes the menu open then immediately close again).
+  // We only add the "collapse after tapping a link" convenience, using
+  // Bootstrap's Collapse API so its internal state stays in sync.
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (navbarCollapse.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+      }
     });
-
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        navbarCollapse.classList.remove('show');
-      });
-    });
-  }
+  });
 }
 
 // Service Cards Hover Effect

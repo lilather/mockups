@@ -110,9 +110,8 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://placehold.co/1920x1080/1a365d/ffffff?text=Justice+Background')
-    center/cover;
-  opacity: 0.1;
+  background: url('../images/banners/banner 5.png') center/cover;
+  opacity: 0.15;
   z-index: 1;
 }
 
@@ -197,6 +196,48 @@ h6 {
   100% {
     box-shadow: 0 0 0 0 rgba(197, 48, 48, 0);
   }
+}
+
+/* Page Header (interior pages) */
+.page-header {
+  padding: 150px 0 80px;
+  color: var(--white);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Legal / Policy pages */
+.legal-content h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.legal-content p,
+.legal-content li {
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.legal-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
 }
 
 /* Sections */
@@ -351,6 +392,17 @@ h6 {
   padding: 2rem;
   border-radius: 15px;
   height: 100%;
+}
+
+.contact-info a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--gold);
+  text-decoration: underline;
 }
 
 .contact-item {
