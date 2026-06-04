@@ -261,10 +261,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Parallax Effect for Hero Section
+  // Parallax Effect for Hero Section (desktop only — keep it static on mobile)
   const heroSection = document.querySelector('.hero-section');
   if (heroSection) {
     window.addEventListener('scroll', function () {
+      if (window.innerWidth <= 768) {
+        heroSection.style.transform = '';
+        return;
+      }
       const scrolled = window.pageYOffset;
       const rate = scrolled * -0.5;
       heroSection.style.transform = `translateY(${rate}px)`;

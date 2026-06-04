@@ -946,11 +946,12 @@ section[id] {
   }
 
   .hero-section {
-    height: 60vh;
+    height: 440px;
   }
 
   .categories-section {
-    height: 40vh;
+    height: auto;
+    padding: 2rem 0;
   }
 
   .nav-link {
@@ -964,7 +965,7 @@ section[id] {
 
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 6rem;
+    gap: 1rem;
   }
 
   .category-icon {
@@ -1023,7 +1024,8 @@ section[id] {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .wrapper {
-    width: 98%;
+    width: 100%;
+    max-width: 95%;
   }
 
   .beans-image img {
@@ -1100,6 +1102,7 @@ section[id] {
 
   body {
     max-width: 95%;
+    margin: 0 auto;
   }
 
   .header {
@@ -1107,11 +1110,13 @@ section[id] {
   }
 
   .hero-section {
-    height: 70vh;
+    height: 520px;
+    padding: 0;
   }
 
   .categories-section {
-    height: 30vh;
+    height: auto;
+    padding: 2.5rem 0;
   }
 
   .navbar-nav {
