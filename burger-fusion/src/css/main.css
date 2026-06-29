@@ -104,7 +104,7 @@ h2 {
 }
 
 .hero-img-one {
-  background-image: url(../images/burger-fusion-hero.svg);
+  background-image: url(../../dist/images/burger-fusion-hero-1800.webp);
   background-repeat: no-repeat;
   background-position: 50%;
   width: 100%;
@@ -173,7 +173,7 @@ h2 {
 }
 
 .gift-cards {
-  background-image: url(../images/Gift\ Cards.svg);
+  background-image: url(../../dist/images/Gift\ Cards-1800.webp);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -508,7 +508,7 @@ footer a {
   }
 
   .gift-cards {
-    background-image: url(../images/Gift\ Cards-Square.svg);
+    background-image: url(../../dist/images/Gift\ Cards-1200.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -534,7 +534,7 @@ footer a {
   }
 
   .hero-img-one {
-    background-image: url(../images/burger-fusion-hero-square.svg);
+    background-image: url(../../dist/images/burger-fusion-hero-square-1800.webp);
     background-repeat: no-repeat;
     background-position: 50%;
     height: 1200px
@@ -583,7 +583,7 @@ footer a {
 
 @media only screen and (max-width:500px) {
   .hero-img-one {
-    background-image: url(../images/burger-fusion-hero-square.svg);
+    background-image: url(../../dist/images/burger-fusion-hero-square-800.webp);
     background-repeat: no-repeat;
     height: 700px;
     background-color: #212529;
@@ -625,8 +625,7 @@ footer a {
     margin-top: 75px;
     margin-bottom: 50px !important;
   }
-
-  .burger-menu {
-    margin-bottom: 50px !important;
+  .burger-menu{
+    margin-bottom: 50px !important
   }
 }
