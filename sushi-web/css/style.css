@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-weight: 700;
 }
 
@@ -41,7 +41,7 @@ h6 {
 }
 
 .navbar-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cinzel', serif;
   font-weight: 900;
 }
 
@@ -131,9 +131,21 @@ h6 {
 .hero-subtitle {
   padding: 1rem 2rem;
   border-radius: 10px;
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(5px);
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
   margin-bottom: 1rem;
+}
+
+/* Keep above-the-fold hero content visible even if AOS is slow/blocked */
+.hero-section [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .hero-title {
@@ -243,25 +255,47 @@ h6 {
   );
 }
 
+/* Make each Signature Dishes column stretch so its card fills the height */
+.menu-preview-section .row > [class*='col-'] {
+  display: flex;
+}
+
 .menu-card {
   background: var(--text-light);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-card:hover {
   transform: translateY(-5px);
 }
 
+/* Content areas grow to equal height; price pins to the bottom of each card */
 .menu-card-content {
   padding: 1.5rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-card h4 {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+}
+
+.menu-card .price {
+  margin-top: auto;
+  align-self: flex-end;
+  background: var(--primary-color);
+  color: var(--accent-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
 }
 
 .price {
@@ -272,25 +306,57 @@ h6 {
 }
 
 /* Menu Items */
+/* Stretch each column so paired cards share a row height */
+.menu-section .row > [class*='col-'] {
+  display: flex;
+}
+
 .menu-item {
   background: var(--text-light);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-item:hover {
   transform: translateY(-3px);
 }
 
+/* Uniform image height so cards line up regardless of source image ratio */
+.menu-item-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.menu-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .menu-item-content {
   padding: 1.5rem;
+  flex: 1 1 auto;
 }
 
 .menu-item h4 {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+}
+
+/* Readable price tag (yellow on white was invisible) */
+.menu-item .price {
+  background: var(--primary-color);
+  color: var(--accent-color);
+  padding: 0.05rem 0.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* Contact Cards */
@@ -377,10 +443,18 @@ h6 {
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .team-card:hover {
   transform: translateY(-5px);
+}
+
+/* Uniform circular headshots regardless of source image dimensions */
+.team-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .team-card h4 {
@@ -435,7 +509,14 @@ h6 {
   margin-bottom: 1rem;
 }
 
+/* Bootstrap 5.3 .text-muted resolves to a near-black color, which is
+   invisible on the dark footer — force a light muted tone instead. */
+.footer .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
 .footer a {
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -486,7 +567,12 @@ h6 {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    padding: 0.75rem 1.25rem;
   }
 
   .page-title {
@@ -648,6 +734,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mock-map-content iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 .mock-map-pin {
